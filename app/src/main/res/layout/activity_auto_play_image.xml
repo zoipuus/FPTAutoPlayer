@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auto_play_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#C00000FF"
+    tools:context="com.toptech.autoplayer.image.AutoPlayImageActivity">
+
+    <Button
+        android:id="@+id/id_btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/id_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:visibility="gone"/>
+
+    <ImageSwitcher
+        android:id="@+id/id_img_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ProgressBar
+        android:id="@+id/id_pro_loading"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/id_text_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/tip_loading"
+        android:textSize="12sp"/>
+
+</FrameLayout>

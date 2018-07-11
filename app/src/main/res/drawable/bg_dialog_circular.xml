@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部带圆角 灰色背景 灰色边框 无下边框 长方体 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/x8"></corners>
+    <solid android:color="#80AAAAAA"></solid>
+</shape>

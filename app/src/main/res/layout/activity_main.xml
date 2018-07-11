@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|left"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/y410"
+    android:paddingRight="@dimen/y410"
+    android:background="@drawable/background"
+    tools:context="com.toptech.autoplayer.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x50"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/str_ftp_info"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        android:text="@string/str_ip_address"/>
+
+    <EditText
+        android:id="@+id/id_ip_address"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_hint_ip_address"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/y5"
+        android:background="@drawable/edit_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        android:text="@string/str_port"/>
+
+    <EditText
+        android:id="@+id/id_port"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/str_hint_port"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/y5"
+        android:background="@drawable/edit_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        android:text="@string/str_user_name"/>
+
+    <EditText
+        android:id="@+id/id_user_name"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_hint_user_name"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/y5"
+        android:background="@drawable/edit_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        android:text="@string/str_password"/>
+
+    <EditText
+        android:id="@+id/id_password"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/str_hint_password"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/y5"
+        android:background="@drawable/edit_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"
+        android:text="@string/str_download_path"/>
+
+    <EditText
+        android:id="@+id/id_download_path"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_hint_download_path"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/y5"
+        android:background="@drawable/edit_selector"/>
+
+    <Button
+        android:id="@+id/id_btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_selector"
+        android:text="@string/str_btn_connect"/>
+
+    <ProgressBar
+        android:id="@+id/id_pro_connecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

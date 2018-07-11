@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/x80">
+
+    <LinearLayout
+        android:layout_width="@dimen/y640"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/x15"
+        android:background="@drawable/bg_dialog_circular"
+        android:gravity="center|start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginBottom="@dimen/x40"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:text="@string/str_ftp_info"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_ip_address"/>
+
+        <EditText
+            android:id="@+id/id_ip_address"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_hint_ip_address"
+            android:maxLines="1"
+            android:padding="@dimen/y5"
+            android:background="@drawable/edit_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_port"/>
+
+        <EditText
+            android:id="@+id/id_port"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/str_hint_port"
+            android:maxLines="1"
+            android:padding="@dimen/y5"
+            android:textSize="18sp"
+            android:background="@drawable/edit_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_user_name"/>
+
+        <EditText
+            android:id="@+id/id_user_name"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_hint_user_name"
+            android:maxLines="1"
+            android:padding="@dimen/y5"
+            android:textSize="18sp"
+            android:background="@drawable/edit_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_password"/>
+
+        <EditText
+            android:id="@+id/id_password"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/str_hint_password"
+            android:maxLines="1"
+            android:padding="@dimen/y5"
+            android:textSize="18sp"
+            android:background="@drawable/edit_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/str_download_path"/>
+
+        <EditText
+            android:id="@+id/id_download_path"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_hint_download_path"
+            android:maxLines="1"
+            android:padding="@dimen/y5"
+            android:textSize="18sp"
+            android:background="@drawable/edit_selector"/>
+
+        <LinearLayout
+            android:id="@+id/id_layout_dialog_btn"
+            android:layout_marginTop="@dimen/x5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/id_btn_connect"
+                style="@style/style_btn"
+                android:textSize="18sp"
+                android:text="@string/str_btn_connect"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/id_btn_cancel"
+                style="@style/style_btn"
+                android:textSize="18sp"
+                android:text="@string/str_btn_cancel"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/id_pro_connecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

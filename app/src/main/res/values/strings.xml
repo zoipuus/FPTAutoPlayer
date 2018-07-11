@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AutoPlayer</string>
+
+    <string name="str_ftp_info">FTP Server Info</string>
+    <string name="str_ip_address">IP Address:</string>
+    <string name="str_port">Port:</string>
+    <string name="str_user_name">User Name:</string>
+    <string name="str_password">Password:</string>
+    <string name="str_download_path">Download Path:</string>
+    <string name="str_hint_ip_address">8.8.8.8</string>
+    <string name="str_hint_port">21</string>
+    <string name="str_hint_user_name">user name</string>
+    <string name="str_hint_password">password</string>
+    <string name="str_hint_download_path">download path</string>
+    <string name="str_btn_connect">Connect</string>
+    <string name="str_btn_cancel">Cancel</string>
+    <string name="str_btn_ok">OK</string>
+    <string name="str_wifi_was_closed">WiFi has been closed or has no connect, please check it!</string>
+    <string name="str_network_unavailable">Network is unavailable, please check it!</string>
+
+    <string name="tip">Tip</string>
+    <string name="tip_ip_address_can_not_empty">ip address can not empty!</string>
+    <string name="tip_port_can_not_empty">port can not empty!</string>
+    <string name="tip_user_name_can_not_empty">user name can not empty!</string>
+    <string name="tip_password_can_not_empty">password can not empty!</string>
+    <string name="tip_download_path_can_not_empty">download path can not empty!</string>
+    <string name="tip_loading">loading</string>
+    <string name="tip_connecting">connecting</string>
+    <string name="tip_error_has_no_files">This Dir has no files or cannot connect to server!</string>
+    <string name="tip_connect_failed">Connect ftp server failed!</string>
+</resources>
